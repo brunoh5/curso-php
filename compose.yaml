@@ -1,0 +1,18 @@
+services:
+  php:
+    image: php:7.4-apache
+    container_name: php-server
+    ports:
+      - "8080:80"
+    volumes:
+      - "./www:/var/www/html"
+
+  mysql:
+    image: mysql:8.0
+    container_name: php-mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - /data:/var/lib/mysql
+    env_file:
+      - .env.development
