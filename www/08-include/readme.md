@@ -1,0 +1,3 @@
+- include: Importa um arquivo para dentro de uma pagina, caso o arquivo não exista, vai gerar um warning e executar o restante do codigo.
+- require: Assim como o include, importa o arquivo, pórem caso o arquivo não exista vai travar.
+- include_once/require_once: Funciona como o include/require, pórem, importa o arquivo apenas uma vez por página para evitar duplicações.
