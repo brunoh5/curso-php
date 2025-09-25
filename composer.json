@@ -1,7 +1,0 @@
-{
-    "name": "php/curso",
-    "scripts": {
-        "services:up": "docker compose -f compose.yaml up -d",
-        "services:down": "docker compose -f compose.yaml down"
-    }
-}
